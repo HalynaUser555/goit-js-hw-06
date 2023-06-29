@@ -10,10 +10,3 @@ const refs = {
 
 
 
-
-
-
-fontSizeControl.addEventListener('input', function () {
-    var fontSize = fontSizeControl.value + 'px';
-    textElement.style.fontSize = fontSize;
-});

@@ -6,8 +6,9 @@ function onFormSubmit(event) {
     event.preventDefault();
     const emailInput = form.elements.email;
     const passwordInput = form.elements.password;
-    if (emailInput.value === '' && passwordInput.value === '') {
+    if (emailInput.value === '' || passwordInput.value === '') {
         alert('Please fill in all fields');
+        return;
     } else {
         const formData = {
             email: emailInput.value,
